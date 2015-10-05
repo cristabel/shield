@@ -8,7 +8,7 @@
     </div>
     <div class="login-box-body">
         {!! Form::open(['url' => '/shield/login', 'name' => 'signin', 'class' => 'form-signin', 'role' => 'form']) !!}
-            @include('shield::error.messages')
+            @include('shield::messages.error')
             <div style="text-align: center">
                 <h3 class="form-signin-heading">Shield - Please sign in</h3>
             </div>

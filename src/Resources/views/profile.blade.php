@@ -8,8 +8,8 @@
     </div>
     <div class="login-box-body">
         {!! Form::open(['url' => '/profile/save', 'name' => 'signin', 'class' => 'form-signin', 'role' => 'form']) !!}
-            @include('shield::message.error')
-            @include('shield::message.success')
+            @include('shield::messages.error')
+            @include('shield::messages.success')
 
             <div style="text-align: center">
                 <img src="{{ url('packages/cristabel/img/mitimiti_160.jpg') }}" class="img-circle" alt="user-profile" width="64">
