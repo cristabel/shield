@@ -1,8 +1,6 @@
 <?php namespace Cristabel\Shield\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-
-use Illuminate\Http\Request;
+use Cristabel\Http\Controllers\Controller;
 use Cristabel\Shield\Http\Requests\LoginRequest;
 
 use Cristabel\Shield\ShieldGuard as Guard;
@@ -56,7 +54,7 @@ class ShieldController extends Controller {
 	public function postLogin(LoginRequest $request)
 	{
 		$credentials = $request->only('email', 'password');
-		if ($this->auth->attempt($credentials, $request->has('remember'))) {
+		if ( $this->auth->attempt($credentials, $request->has('remember')) ) {
 			return redirect()->intended($this->redirectPath());
 		}
 
@@ -64,7 +62,7 @@ class ShieldController extends Controller {
 					->withInput($request->only('email', 'remember'))
 					->withErrors([
 						'email' => 'These credentials do not match our records.',
-					]);
+					]); 
 	}
 
 	/**
