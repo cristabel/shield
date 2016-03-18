@@ -1,8 +1,6 @@
 <?php namespace Cristabel\Shield\Http\ViewComposers;
 
 use Illuminate\Contracts\View\View;
-use Illuminate\Users\Repository as UserRepository;
-
 use ShieldAuth;
 
 class UserAdministratorComposer {

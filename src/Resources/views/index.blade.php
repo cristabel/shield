@@ -20,6 +20,10 @@
                 <input type="password" name="password" class="form-control" placeholder="Password">
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
+            <div class="form-group has-feedback">
+                <input type="checkbox" name="remember">
+                <span>Remember</span>
+            </div>
             <div class="row">
                 <div class="col-lg-offset-8 col-lg-4">
                     <button type="submit" class="btn btn-primary btn-block">Login</button>
