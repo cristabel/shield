@@ -1,6 +1,6 @@
 <?php namespace Cristabel\Shield\Http\Controllers;
 
-use Cristabel\Http\Controllers\Controller;
+use Cristabel\Shield\Http\Controllers\Controller;
 use Cristabel\Shield\Http\Requests\LoginRequest;
 
 use Cristabel\Shield\ShieldGuard as Guard;

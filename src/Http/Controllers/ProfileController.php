@@ -1,6 +1,6 @@
 <?php namespace Cristabel\Shield\Http\Controllers;
 
-use Cristabel\Http\Controllers\Controller;
+use Cristabel\Shield\Http\ControllersController;
 
 use Cristabel\Shield\Http\Requests\ProfileRequest;
 
